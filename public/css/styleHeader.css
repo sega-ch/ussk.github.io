@@ -12,7 +12,7 @@ body {
 
 @font-face {
   font-family: Monserat;
-  src: url(./src/fonts/Montserrat-Regular.ttf);
+  src: url(../../src/fonts/Montserrat-Regular.ttf);
 }
 .main__header {
   display: flex;
@@ -71,7 +71,7 @@ body {
   position: absolute;
   left: 0;
   top: 0;
-  background-image: url(./src/homeBack.png);
+  background-image: url(../../src/homeBack.png);
   filter: brightness(20%);
   width: 100vw;
   height: 730px;
