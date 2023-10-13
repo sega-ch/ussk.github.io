@@ -1,0 +1,4045 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  overflow-x: hidden;
+}
+
+@font-face {
+  font-family: Monserat;
+  src: url(../../src/fonts/Montserrat-Regular.ttf);
+}
+@media (max-width: 769px) {
+  body {
+    background-color: #EDEDED;
+  }
+  .main__header {
+    display: flex;
+    justify-content: space-between;
+  }
+  .main__header .logo {
+    display: flex;
+    margin: 15px;
+  }
+  .main__header .logo img {
+    width: 120px;
+    height: 18px;
+  }
+  .main__header .menu {
+    display: flex;
+  }
+  .main__header .menu .link {
+    font-size: 12px;
+    margin: 0;
+    padding: 2px;
+  }
+  .main__header .social {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+  }
+  .main__header .social .media {
+    margin: 0px;
+  }
+  .main__header .social .media img {
+    width: 20px;
+    height: 20px;
+    margin-left: 7px;
+  }
+  .main__header .social .phone {
+    margin: 0px;
+  }
+  .main__header .social .phone .phone__number {
+    color: white;
+    font-size: 12px;
+  }
+  .main__header .social .phone .phone__number:hover {
+    color: #FF6000;
+  }
+  .main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 768px;
+  }
+  .main .back__image {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-image: url(../../src/homeBack.png);
+    filter: brightness(20%);
+    width: 768px;
+    height: 650px;
+    z-index: -1;
+  }
+  .main .offer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+  }
+  .main .offer .maintTitle {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 200px;
+    font-size: 20px;
+    font-family: "Monserat";
+  }
+  .main .offer .subTitle {
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+    margin-top: 35px;
+    font-size: 16px;
+    text-align: center;
+    font-family: "Monserat";
+  }
+  .main .offer .offerButton {
+    margin-top: 180px;
+    display: flex;
+    justify-content: center;
+    background-color: #FF6000;
+    border-radius: 5px;
+  }
+  .main .offer .offerButton:hover {
+    background-color: #783105;
+  }
+  .main .offer .offerButton .offerButton__txt {
+    padding: 10px;
+    font-family: "Monserat";
+    font-size: 12px;
+    margin: 15px;
+    text-decoration: none;
+    color: white;
+  }
+  .main .production {
+    display: flex;
+    width: 100%;
+    z-index: -2;
+    background-color: #EDEDED;
+  }
+  .main .production .production__container {
+    margin-top: 70px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .main .production .production__container .title {
+    display: flex;
+    justify-content: start;
+    margin: 15px;
+    font-size: 16px;
+    font-family: "Monserat";
+  }
+  .main .production .production__container .info {
+    margin-top: 50px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: none;
+    align-items: center;
+  }
+  .main .production .production__container .info .photo {
+    margin-top: 0px;
+    margin-left: 0px;
+    display: flex;
+  }
+  .main .production .production__container .info .photo img {
+    border-radius: 155px;
+    width: 280px;
+    height: 150px;
+  }
+  .main .production .production__container .info .discription {
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 20px;
+    font-family: "Monserat";
+    margin-top: 20px;
+    font-size: 12px;
+    line-height: 25px;
+    letter-spacing: 0;
+    text-align: left;
+    width: 80%;
+  }
+  .main .advantages {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding-bottom: 100px;
+  }
+  .main .advantages .title {
+    font-size: 16px;
+    margin: 15px;
+    font-family: "Monserat";
+  }
+  .main .advantages .advantages__container {
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+  }
+  .main .advantages .advantages__container .column {
+    display: flex;
+    flex-direction: column;
+  }
+  .main .advantages .advantages__container .column .line {
+    display: flex;
+    justify-content: start;
+    width: 280px;
+    margin-top: 45px;
+  }
+  .main .advantages .advantages__container .column .line img {
+    width: 72px;
+    height: 70px;
+  }
+  .main .advantages .advantages__container .column .line p {
+    margin-left: 20px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    font-family: "Monserat";
+  }
+  .main .materials {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .main .materials .title {
+    margin-top: 30px;
+    margin-left: 35px;
+    font-family: "Monserat";
+    font-size: 16px;
+    margin: 15px;
+  }
+  .main .materials .m__discription {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .main .materials .m__discription .info {
+    margin-top: 35px;
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 20px;
+    font-family: "Monserat";
+    font-size: 12px;
+  }
+  .main .materials .materials__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .main .materials .materials__container .frame {
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+  }
+  .main .materials .materials__container .frame .discription {
+    display: flex;
+    flex-direction: column;
+  }
+  .main .materials .materials__container .frame .discription .d__title {
+    display: flex;
+    justify-content: center;
+  }
+  .main .materials .materials__container .frame .discription .d__title .title {
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 20px;
+    font-family: "Monserat";
+    font-size: 16px;
+  }
+  .main .materials .materials__container .frame .discription .d__info {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+  }
+  .main .materials .materials__container .frame .discription .d__info .info {
+    text-align: center;
+    margin-left: 15px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 20px;
+    font-family: "Monserat";
+    font-size: 11px;
+  }
+  .main .materials .materials__container .frame .f__photo {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .main .materials .materials__container .frame .f__photo .photo {
+    width: 280px;
+    height: 200px;
+    border-radius: 15px;
+  }
+  .main .materials .materials__container .finishing {
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+  }
+  .main .materials .materials__container .finishing .discription {
+    display: flex;
+    flex-direction: column;
+  }
+  .main .materials .materials__container .finishing .discription .d__title {
+    display: flex;
+    justify-content: center;
+  }
+  .main .materials .materials__container .finishing .discription .d__title .title {
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 20px;
+    font-family: "Monserat";
+    font-size: 16px;
+  }
+  .main .materials .materials__container .finishing .discription .d__info {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+  }
+  .main .materials .materials__container .finishing .discription .d__info .info {
+    text-align: center;
+    margin-left: 15px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 20px;
+    font-family: "Monserat";
+    font-size: 11px;
+  }
+  .main .materials .materials__container .finishing .f__photo {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .main .materials .materials__container .finishing .f__photo .photo {
+    width: 280px;
+    height: 200px;
+    border-radius: 15px;
+  }
+  .main .materials .materials__container .facade {
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+  }
+  .main .materials .materials__container .facade .discription {
+    display: flex;
+    flex-direction: column;
+  }
+  .main .materials .materials__container .facade .discription .d__title {
+    display: flex;
+    justify-content: center;
+  }
+  .main .materials .materials__container .facade .discription .d__title .title {
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 20px;
+    font-family: "Monserat";
+    font-size: 16px;
+  }
+  .main .materials .materials__container .facade .discription .d__info {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+  }
+  .main .materials .materials__container .facade .discription .d__info .info {
+    text-align: center;
+    margin-left: 15px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 20px;
+    font-family: "Monserat";
+    font-size: 11px;
+  }
+  .main .materials .materials__container .facade .f__photo {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .main .materials .materials__container .facade .f__photo .photo {
+    width: 280px;
+    height: 200px;
+    border-radius: 15px;
+  }
+  .main .types {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding-bottom: 50px;
+  }
+  .main .types .title {
+    margin-top: 30px;
+    margin-left: 35px;
+    font-family: "Monserat";
+    width: 100%;
+    font-size: 16px;
+    margin: 15px;
+  }
+  .main .types .t__discription {
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .main .types .t__discription .discription {
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 20px;
+    font-family: "Monserat";
+    letter-spacing: 0.9px;
+    font-size: 12px;
+    width: 90%;
+  }
+  .main .types .t__photos {
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .main .types .t__photos .photos__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .main .types .t__photos .photos__container .photo {
+    margin-top: 25px;
+    width: 280px;
+    height: 200px;
+    border-radius: 15px;
+  }
+  .main .conditions__container {
+    display: flex;
+    flex-direction: column;
+    background-color: #ededed;
+    width: 100%;
+    padding-bottom: 50px;
+  }
+  .main .conditions__container .title {
+    margin-top: 30px;
+    margin-left: 35px;
+    font-family: "Monserat";
+    font-size: 16px;
+    margin: 15px;
+    width: 100%;
+  }
+  .main .conditions__container .conditions {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .main .conditions__container .conditions .all__conditions {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    margin-top: 25px;
+  }
+  .main .conditions__container .conditions .all__conditions .left__conditions {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+  }
+  .main .conditions__container .conditions .all__conditions .left__conditions .condition {
+    width: 280px;
+    background-color: white;
+    margin: 10px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+  }
+  .main .conditions__container .conditions .all__conditions .left__conditions .condition:hover {
+    background-color: rgba(255, 98, 0, 0.4196078431);
+    transition: 0.8s;
+  }
+  .main .conditions__container .conditions .all__conditions .left__conditions .condition .consition__text {
+    text-align: center;
+    padding: 25px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    line-height: 15px;
+    font-family: "Monserat";
+  }
+  .main .conditions__container .conditions .all__conditions .right__conditions {
+    display: flex;
+    flex-direction: column;
+  }
+  .main .conditions__container .conditions .all__conditions .right__conditions .condition {
+    width: 280px;
+    margin: 10px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+  }
+  .main .conditions__container .conditions .all__conditions .right__conditions .condition:hover {
+    background-color: rgba(255, 98, 0, 0.4196078431);
+    transition: 0.8s;
+  }
+  .main .conditions__container .conditions .all__conditions .right__conditions .condition .consition__text {
+    text-align: center;
+    padding: 25px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    line-height: 15px;
+    font-family: "Monserat";
+  }
+  .main .gallery {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding-bottom: 50px;
+  }
+  .main .gallery .title {
+    margin-top: 30px;
+    margin-left: 35px;
+    font-size: 16px;
+    margin: 15px;
+  }
+  .main .gallery .gallery__container {
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .main .gallery .gallery__container .left__Arrow {
+    padding: 15px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  .main .gallery .gallery__container .gallery__photo {
+    width: 350px;
+    height: 200px;
+    border-radius: 7px;
+    border: 0.05rem solid black;
+  }
+  .main .gallery .gallery__container .right__Arrow {
+    padding: 15px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: black;
+    padding-bottom: 100px;
+  }
+  .footer .title {
+    margin-top: 30px;
+    margin-left: 35px;
+    font-family: "Monserat";
+    color: white;
+    font-size: 16px;
+    margin: 15px;
+  }
+  .footer .footer__container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+  .footer .footer__container .contact__text {
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 20px;
+    font-family: "Monserat";
+    color: white;
+    margin-top: 50px;
+    font-size: 12px;
+    text-align: center;
+    letter-spacing: 0.5px;
+    line-height: 15px;
+  }
+  .footer .footer__container .contact__data {
+    display: flex;
+    flex-direction: column;
+    justify-content: none;
+    margin-top: 35px;
+  }
+  .footer .footer__container .contact__data .data__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer .footer__container .contact__data .data__info .email {
+    margin-top: 15px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 20px;
+    font-family: "Monserat";
+    color: white;
+    font-size: 12px;
+    letter-spacing: 2px;
+    line-height: 15px;
+  }
+  .footer .footer__container .contact__data .data__info .email__name {
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 20px;
+    font-family: "Monserat";
+    color: #FF6000;
+    font-size: 12px;
+    letter-spacing: 2px;
+    line-height: 15px;
+  }
+  .footer .footer__container .contact__data .data__info .phone {
+    margin-top: 30px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 20px;
+    font-family: "Monserat";
+    color: white;
+    font-size: 12px;
+    letter-spacing: 2px;
+    line-height: 15px;
+  }
+  .footer .footer__container .contact__data .data__info .phone__number {
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 20px;
+    font-family: "Monserat";
+    color: #FF6000;
+    font-size: 12px;
+    letter-spacing: 2px;
+    line-height: 15px;
+  }
+  .footer .footer__container .contact__data .data__info .address {
+    margin-top: 30px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 20px;
+    font-family: "Monserat";
+    color: white;
+    font-size: 12px;
+    letter-spacing: 2px;
+    line-height: 15px;
+  }
+  .footer .footer__container .contact__data .data__info .address_text {
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 20px;
+    font-family: "Monserat";
+    color: #FF6000;
+    font-size: 12px;
+    letter-spacing: 2px;
+    line-height: 15px;
+  }
+  .footer .footer__container .contact__data .data_inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px;
+  }
+  .footer .footer__container .contact__data .data_inputs .name {
+    padding: 2px;
+    margin-top: 30px;
+    width: 250px;
+  }
+  .footer .footer__container .contact__data .data_inputs .phone {
+    padding: 2px;
+    margin-top: 30px;
+    width: 250px;
+  }
+  .footer .footer__container .contact__data .data_inputs .comments {
+    width: 250px;
+    height: 75px;
+    margin-top: 30px;
+  }
+  .footer .footer__container .contact__data .data_inputs .check__person {
+    display: flex;
+    justify-content: start;
+  }
+  .footer .footer__container .contact__data .data_inputs .check__person .agree_text {
+    margin-top: 17px;
+    margin-left: 10px;
+    font-family: "Monserat";
+    color: white;
+    font-size: 8px;
+    letter-spacing: 1px;
+    line-height: 10px;
+  }
+  .footer .footer__container .contact__data .data_inputs .check__person .check__info {
+    width: 15px;
+  }
+  .footer .footer__container .contact__data .data_inputs .submit__form {
+    margin-top: 30px;
+    padding: 5px;
+    width: 250px;
+    background-color: #FF6000;
+    color: white;
+    font-family: "Monserat";
+    font-weight: bold;
+    border-radius: 8px;
+  }
+}
+@media (max-width: 481px) {
+  body {
+    background-color: #EDEDED;
+  }
+  .main__header {
+    display: flex;
+    justify-content: space-between;
+  }
+  .main__header .logo {
+    display: flex;
+    margin: 5px;
+  }
+  .main__header .logo img {
+    width: 120px;
+    height: 18px;
+  }
+  .main__header .menu {
+    display: none;
+  }
+  .main__header .social {
+    display: flex;
+    flex-direction: column;
+  }
+  .main__header .social .media {
+    margin: 5px;
+  }
+  .main__header .social .media img {
+    width: 30px;
+    height: 30px;
+    margin-left: 7px;
+  }
+  .main__header .social .phone .phone__number {
+    color: white;
+  }
+  .main__header .social .phone .phone__number:hover {
+    color: #FF6000;
+  }
+  .main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 480px;
+  }
+  .main .back__image {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-image: url(../../src/homeBack.png);
+    filter: brightness(20%);
+    width: 480px;
+    height: 580px;
+    z-index: -1;
+  }
+  .main .offer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+  }
+  .main .offer .maintTitle {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 100px;
+    font-size: 20px;
+    font-family: "Monserat";
+  }
+  .main .offer .subTitle {
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+    margin-top: 35px;
+    font-size: 16px;
+    text-align: center;
+    font-family: "Monserat";
+  }
+  .main .offer .offerButton {
+    margin-top: 180px;
+    display: flex;
+    justify-content: center;
+    background-color: #FF6000;
+    border-radius: 5px;
+  }
+  .main .offer .offerButton:hover {
+    background-color: #783105;
+  }
+  .main .offer .offerButton .offerButton__txt {
+    padding: 10px;
+    font-family: "Monserat";
+    font-size: 12px;
+    margin: 15px;
+    text-decoration: none;
+    color: white;
+  }
+  .main .production {
+    display: flex;
+    width: 100%;
+    z-index: -2;
+    background-color: #EDEDED;
+  }
+  .main .production .production__container {
+    margin-top: 70px;
+    margin-bottom: 40px;
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+  }
+  .main .production .production__container .title {
+    display: flex;
+    justify-content: start;
+    margin: 15px;
+    font-size: 16px;
+    font-family: "Monserat";
+  }
+  .main .production .production__container .info {
+    margin-top: 50px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: none;
+    align-items: center;
+  }
+  .main .production .production__container .info .photo {
+    margin-top: 0px;
+    margin-left: 0px;
+    display: flex;
+  }
+  .main .production .production__container .info .photo img {
+    border-radius: 155px;
+    width: 280px;
+    height: 150px;
+  }
+  .main .production .production__container .info .discription {
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 20px;
+    font-family: "Monserat";
+    margin-top: 20px;
+    font-size: 12px;
+    line-height: 25px;
+    letter-spacing: 0;
+    text-align: left;
+    width: 80%;
+  }
+  .main .advantages {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding-bottom: 100px;
+  }
+  .main .advantages .title {
+    font-size: 16px;
+    margin: 15px;
+    font-family: "Monserat";
+  }
+  .main .advantages .advantages__container {
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .main .advantages .advantages__container .column {
+    display: flex;
+    flex-direction: column;
+  }
+  .main .advantages .advantages__container .column .line {
+    display: flex;
+    justify-content: start;
+    width: 280px;
+    margin-top: 45px;
+  }
+  .main .advantages .advantages__container .column .line img {
+    width: 72px;
+    height: 70px;
+  }
+  .main .advantages .advantages__container .column .line p {
+    margin-left: 20px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    font-family: "Monserat";
+  }
+  .main .materials {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .main .materials .title {
+    margin-top: 30px;
+    margin-left: 35px;
+    font-family: "Monserat";
+    font-size: 16px;
+    margin: 15px;
+  }
+  .main .materials .m__discription {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .main .materials .m__discription .info {
+    margin-top: 35px;
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 20px;
+    font-family: "Monserat";
+    font-size: 12px;
+  }
+  .main .materials .materials__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .main .materials .materials__container .frame {
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+  }
+  .main .materials .materials__container .frame .discription {
+    display: flex;
+    flex-direction: column;
+  }
+  .main .materials .materials__container .frame .discription .d__title {
+    display: flex;
+    justify-content: center;
+  }
+  .main .materials .materials__container .frame .discription .d__title .title {
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 20px;
+    font-family: "Monserat";
+    font-size: 16px;
+  }
+  .main .materials .materials__container .frame .discription .d__info {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+  }
+  .main .materials .materials__container .frame .discription .d__info .info {
+    text-align: center;
+    margin-left: 15px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 20px;
+    font-family: "Monserat";
+    font-size: 11px;
+  }
+  .main .materials .materials__container .frame .f__photo {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .main .materials .materials__container .frame .f__photo .photo {
+    width: 280px;
+    height: 200px;
+    border-radius: 15px;
+  }
+  .main .materials .materials__container .finishing {
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+  }
+  .main .materials .materials__container .finishing .discription {
+    display: flex;
+    flex-direction: column;
+  }
+  .main .materials .materials__container .finishing .discription .d__title {
+    display: flex;
+    justify-content: center;
+  }
+  .main .materials .materials__container .finishing .discription .d__title .title {
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 20px;
+    font-family: "Monserat";
+    font-size: 16px;
+  }
+  .main .materials .materials__container .finishing .discription .d__info {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+  }
+  .main .materials .materials__container .finishing .discription .d__info .info {
+    text-align: center;
+    margin-left: 15px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 20px;
+    font-family: "Monserat";
+    font-size: 11px;
+  }
+  .main .materials .materials__container .finishing .f__photo {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .main .materials .materials__container .finishing .f__photo .photo {
+    width: 280px;
+    height: 200px;
+    border-radius: 15px;
+  }
+  .main .materials .materials__container .facade {
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+  }
+  .main .materials .materials__container .facade .discription {
+    display: flex;
+    flex-direction: column;
+  }
+  .main .materials .materials__container .facade .discription .d__title {
+    display: flex;
+    justify-content: center;
+  }
+  .main .materials .materials__container .facade .discription .d__title .title {
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 20px;
+    font-family: "Monserat";
+    font-size: 16px;
+  }
+  .main .materials .materials__container .facade .discription .d__info {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+  }
+  .main .materials .materials__container .facade .discription .d__info .info {
+    text-align: center;
+    margin-left: 15px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 20px;
+    font-family: "Monserat";
+    font-size: 11px;
+  }
+  .main .materials .materials__container .facade .f__photo {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .main .materials .materials__container .facade .f__photo .photo {
+    width: 280px;
+    height: 200px;
+    border-radius: 15px;
+  }
+  .main .types {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding-bottom: 50px;
+  }
+  .main .types .title {
+    margin-top: 30px;
+    margin-left: 35px;
+    font-family: "Monserat";
+    width: 100%;
+    font-size: 16px;
+    margin: 15px;
+  }
+  .main .types .t__discription {
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .main .types .t__discription .discription {
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 20px;
+    font-family: "Monserat";
+    letter-spacing: 0.9px;
+    font-size: 12px;
+    width: 90%;
+  }
+  .main .types .t__photos {
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .main .types .t__photos .photos__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .main .types .t__photos .photos__container .photo {
+    margin-top: 25px;
+    width: 280px;
+    height: 200px;
+    border-radius: 15px;
+  }
+  .main .conditions__container {
+    display: flex;
+    flex-direction: column;
+    background-color: #ededed;
+    width: 100%;
+    padding-bottom: 50px;
+  }
+  .main .conditions__container .title {
+    margin-top: 30px;
+    margin-left: 35px;
+    font-family: "Monserat";
+    font-size: 16px;
+    margin: 15px;
+    width: 100%;
+  }
+  .main .conditions__container .conditions {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .main .conditions__container .conditions .all__conditions {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    margin-top: 25px;
+  }
+  .main .conditions__container .conditions .all__conditions .left__conditions {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+  }
+  .main .conditions__container .conditions .all__conditions .left__conditions .condition {
+    width: 280px;
+    background-color: white;
+    margin: 10px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+  }
+  .main .conditions__container .conditions .all__conditions .left__conditions .condition:hover {
+    background-color: rgba(255, 98, 0, 0.4196078431);
+    transition: 0.8s;
+  }
+  .main .conditions__container .conditions .all__conditions .left__conditions .condition .consition__text {
+    text-align: center;
+    padding: 25px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    line-height: 15px;
+    font-family: "Monserat";
+  }
+  .main .conditions__container .conditions .all__conditions .right__conditions {
+    display: flex;
+    flex-direction: column;
+  }
+  .main .conditions__container .conditions .all__conditions .right__conditions .condition {
+    width: 280px;
+    margin: 10px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+  }
+  .main .conditions__container .conditions .all__conditions .right__conditions .condition:hover {
+    background-color: rgba(255, 98, 0, 0.4196078431);
+    transition: 0.8s;
+  }
+  .main .conditions__container .conditions .all__conditions .right__conditions .condition .consition__text {
+    text-align: center;
+    padding: 25px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    line-height: 15px;
+    font-family: "Monserat";
+  }
+  .main .gallery {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding-bottom: 50px;
+  }
+  .main .gallery .title {
+    margin-top: 30px;
+    margin-left: 35px;
+    font-size: 16px;
+    margin: 15px;
+  }
+  .main .gallery .gallery__container {
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .main .gallery .gallery__container .left__Arrow {
+    padding: 15px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  .main .gallery .gallery__container .gallery__photo {
+    width: 350px;
+    height: 200px;
+    border-radius: 7px;
+    border: 0.05rem solid black;
+  }
+  .main .gallery .gallery__container .right__Arrow {
+    padding: 15px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: black;
+    padding-bottom: 100px;
+  }
+  .footer .title {
+    margin-top: 30px;
+    margin-left: 35px;
+    font-family: "Monserat";
+    color: white;
+    font-size: 16px;
+    margin: 15px;
+  }
+  .footer .footer__container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+  .footer .footer__container .contact__text {
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 20px;
+    font-family: "Monserat";
+    color: white;
+    margin-top: 50px;
+    font-size: 12px;
+    text-align: center;
+    letter-spacing: 0.5px;
+    line-height: 15px;
+  }
+  .footer .footer__container .contact__data {
+    display: flex;
+    flex-direction: column;
+    justify-content: none;
+    margin-top: 35px;
+  }
+  .footer .footer__container .contact__data .data__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer .footer__container .contact__data .data__info .email {
+    margin-top: 15px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 20px;
+    font-family: "Monserat";
+    color: white;
+    font-size: 12px;
+    letter-spacing: 2px;
+    line-height: 15px;
+  }
+  .footer .footer__container .contact__data .data__info .email__name {
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 20px;
+    font-family: "Monserat";
+    color: #FF6000;
+    font-size: 12px;
+    letter-spacing: 2px;
+    line-height: 15px;
+  }
+  .footer .footer__container .contact__data .data__info .phone {
+    margin-top: 30px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 20px;
+    font-family: "Monserat";
+    color: white;
+    font-size: 12px;
+    letter-spacing: 2px;
+    line-height: 15px;
+  }
+  .footer .footer__container .contact__data .data__info .phone__number {
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 20px;
+    font-family: "Monserat";
+    color: #FF6000;
+    font-size: 12px;
+    letter-spacing: 2px;
+    line-height: 15px;
+  }
+  .footer .footer__container .contact__data .data__info .address {
+    margin-top: 30px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 20px;
+    font-family: "Monserat";
+    color: white;
+    font-size: 12px;
+    letter-spacing: 2px;
+    line-height: 15px;
+  }
+  .footer .footer__container .contact__data .data__info .address_text {
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 20px;
+    font-family: "Monserat";
+    color: #FF6000;
+    font-size: 12px;
+    letter-spacing: 2px;
+    line-height: 15px;
+  }
+  .footer .footer__container .contact__data .data_inputs {
+    display: flex;
+    flex-direction: column;
+    margin-left: 115px;
+  }
+  .footer .footer__container .contact__data .data_inputs .name {
+    padding: 2px;
+    margin-top: 30px;
+    width: 250px;
+  }
+  .footer .footer__container .contact__data .data_inputs .phone {
+    padding: 2px;
+    margin-top: 30px;
+    width: 250px;
+  }
+  .footer .footer__container .contact__data .data_inputs .comments {
+    width: 250px;
+    height: 75px;
+    margin-top: 30px;
+  }
+  .footer .footer__container .contact__data .data_inputs .check__person {
+    display: flex;
+    justify-content: start;
+  }
+  .footer .footer__container .contact__data .data_inputs .check__person .agree_text {
+    margin-top: 17px;
+    margin-left: 10px;
+    font-family: "Monserat";
+    color: white;
+    font-size: 8px;
+    letter-spacing: 1px;
+    line-height: 10px;
+  }
+  .footer .footer__container .contact__data .data_inputs .check__person .check__info {
+    width: 15px;
+  }
+  .footer .footer__container .contact__data .data_inputs .submit__form {
+    margin-top: 30px;
+    padding: 5px;
+    width: 250px;
+    background-color: #FF6000;
+    color: white;
+    font-family: "Monserat";
+    font-weight: bold;
+    border-radius: 8px;
+  }
+}
+@media (max-width: 430px) {
+  body {
+    background-color: #EDEDED;
+  }
+  .main__header {
+    display: flex;
+    justify-content: space-between;
+  }
+  .main__header .logo {
+    display: flex;
+    margin: 5px;
+  }
+  .main__header .logo img {
+    width: 120px;
+    height: 18px;
+  }
+  .main__header .menu {
+    display: none;
+  }
+  .main__header .social {
+    display: flex;
+    flex-direction: column;
+  }
+  .main__header .social .media {
+    margin: 5px;
+  }
+  .main__header .social .media img {
+    width: 30px;
+    height: 30px;
+    margin-left: 7px;
+  }
+  .main__header .social .phone .phone__number {
+    color: white;
+  }
+  .main__header .social .phone .phone__number:hover {
+    color: #FF6000;
+  }
+  .main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 430px;
+  }
+  .main .back__image {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-image: url(../../src/homeBack.png);
+    filter: brightness(20%);
+    width: 430px;
+    height: 580px;
+    z-index: -1;
+  }
+  .main .offer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+  }
+  .main .offer .maintTitle {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 100px;
+    font-size: 20px;
+    font-family: "Monserat";
+  }
+  .main .offer .subTitle {
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+    margin-top: 35px;
+    font-size: 16px;
+    text-align: center;
+    font-family: "Monserat";
+  }
+  .main .offer .offerButton {
+    margin-top: 180px;
+    display: flex;
+    justify-content: center;
+    background-color: #FF6000;
+    border-radius: 5px;
+  }
+  .main .offer .offerButton:hover {
+    background-color: #783105;
+  }
+  .main .offer .offerButton .offerButton__txt {
+    padding: 10px;
+    font-family: "Monserat";
+    font-size: 12px;
+    margin: 15px;
+    text-decoration: none;
+    color: white;
+  }
+  .main .production {
+    display: flex;
+    width: 100%;
+    z-index: -2;
+    background-color: #EDEDED;
+  }
+  .main .production .production__container {
+    margin-top: 70px;
+    margin-bottom: 40px;
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+  }
+  .main .production .production__container .title {
+    display: flex;
+    justify-content: start;
+    margin: 15px;
+    font-size: 16px;
+    font-family: "Monserat";
+  }
+  .main .production .production__container .info {
+    margin-top: 50px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: none;
+    align-items: center;
+  }
+  .main .production .production__container .info .photo {
+    margin-top: 0px;
+    margin-left: 0px;
+    display: flex;
+  }
+  .main .production .production__container .info .photo img {
+    border-radius: 155px;
+    width: 280px;
+    height: 150px;
+  }
+  .main .production .production__container .info .discription {
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 20px;
+    font-family: "Monserat";
+    margin-top: 20px;
+    font-size: 12px;
+    line-height: 25px;
+    letter-spacing: 0;
+    text-align: left;
+    width: 80%;
+  }
+  .main .advantages {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding-bottom: 100px;
+  }
+  .main .advantages .title {
+    font-size: 16px;
+    margin: 15px;
+    font-family: "Monserat";
+  }
+  .main .advantages .advantages__container {
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  .main .advantages .advantages__container .column {
+    display: flex;
+    flex-direction: column;
+  }
+  .main .advantages .advantages__container .column .line {
+    display: flex;
+    justify-content: start;
+    width: 280px;
+    margin-top: 45px;
+  }
+  .main .advantages .advantages__container .column .line img {
+    width: 72px;
+    height: 70px;
+  }
+  .main .advantages .advantages__container .column .line p {
+    margin-left: 20px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    font-family: "Monserat";
+  }
+  .main .materials {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .main .materials .title {
+    margin-top: 30px;
+    margin-left: 35px;
+    font-family: "Monserat";
+    font-size: 16px;
+    margin: 15px;
+  }
+  .main .materials .m__discription {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .main .materials .m__discription .info {
+    margin-top: 35px;
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 20px;
+    font-family: "Monserat";
+    font-size: 12px;
+  }
+  .main .materials .materials__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .main .materials .materials__container .frame {
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+  }
+  .main .materials .materials__container .frame .discription {
+    display: flex;
+    flex-direction: column;
+  }
+  .main .materials .materials__container .frame .discription .d__title {
+    display: flex;
+    justify-content: center;
+  }
+  .main .materials .materials__container .frame .discription .d__title .title {
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 20px;
+    font-family: "Monserat";
+    font-size: 16px;
+  }
+  .main .materials .materials__container .frame .discription .d__info {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+  }
+  .main .materials .materials__container .frame .discription .d__info .info {
+    text-align: center;
+    margin-left: 15px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 20px;
+    font-family: "Monserat";
+    font-size: 11px;
+  }
+  .main .materials .materials__container .frame .f__photo {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .main .materials .materials__container .frame .f__photo .photo {
+    width: 280px;
+    height: 200px;
+    border-radius: 15px;
+  }
+  .main .materials .materials__container .finishing {
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+  }
+  .main .materials .materials__container .finishing .discription {
+    display: flex;
+    flex-direction: column;
+  }
+  .main .materials .materials__container .finishing .discription .d__title {
+    display: flex;
+    justify-content: center;
+  }
+  .main .materials .materials__container .finishing .discription .d__title .title {
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 20px;
+    font-family: "Monserat";
+    font-size: 16px;
+  }
+  .main .materials .materials__container .finishing .discription .d__info {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+  }
+  .main .materials .materials__container .finishing .discription .d__info .info {
+    text-align: center;
+    margin-left: 15px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 20px;
+    font-family: "Monserat";
+    font-size: 11px;
+  }
+  .main .materials .materials__container .finishing .f__photo {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .main .materials .materials__container .finishing .f__photo .photo {
+    width: 280px;
+    height: 200px;
+    border-radius: 15px;
+  }
+  .main .materials .materials__container .facade {
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+  }
+  .main .materials .materials__container .facade .discription {
+    display: flex;
+    flex-direction: column;
+  }
+  .main .materials .materials__container .facade .discription .d__title {
+    display: flex;
+    justify-content: center;
+  }
+  .main .materials .materials__container .facade .discription .d__title .title {
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 20px;
+    font-family: "Monserat";
+    font-size: 16px;
+  }
+  .main .materials .materials__container .facade .discription .d__info {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+  }
+  .main .materials .materials__container .facade .discription .d__info .info {
+    text-align: center;
+    margin-left: 15px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 20px;
+    font-family: "Monserat";
+    font-size: 11px;
+  }
+  .main .materials .materials__container .facade .f__photo {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .main .materials .materials__container .facade .f__photo .photo {
+    width: 280px;
+    height: 200px;
+    border-radius: 15px;
+  }
+  .main .types {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding-bottom: 50px;
+  }
+  .main .types .title {
+    margin-top: 30px;
+    margin-left: 35px;
+    font-family: "Monserat";
+    width: 100%;
+    font-size: 16px;
+    margin: 15px;
+  }
+  .main .types .t__discription {
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .main .types .t__discription .discription {
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 20px;
+    font-family: "Monserat";
+    letter-spacing: 0.9px;
+    font-size: 12px;
+    width: 90%;
+  }
+  .main .types .t__photos {
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .main .types .t__photos .photos__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .main .types .t__photos .photos__container .photo {
+    margin-top: 25px;
+    width: 280px;
+    height: 200px;
+    border-radius: 15px;
+  }
+  .main .conditions__container {
+    display: flex;
+    flex-direction: column;
+    background-color: #ededed;
+    width: 100%;
+    padding-bottom: 50px;
+  }
+  .main .conditions__container .title {
+    margin-top: 30px;
+    margin-left: 35px;
+    font-family: "Monserat";
+    font-size: 16px;
+    margin: 15px;
+    width: 100%;
+  }
+  .main .conditions__container .conditions {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .main .conditions__container .conditions .all__conditions {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    margin-top: 25px;
+  }
+  .main .conditions__container .conditions .all__conditions .left__conditions {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+  }
+  .main .conditions__container .conditions .all__conditions .left__conditions .condition {
+    width: 280px;
+    background-color: white;
+    margin: 10px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+  }
+  .main .conditions__container .conditions .all__conditions .left__conditions .condition:hover {
+    background-color: rgba(255, 98, 0, 0.4196078431);
+    transition: 0.8s;
+  }
+  .main .conditions__container .conditions .all__conditions .left__conditions .condition .consition__text {
+    text-align: center;
+    padding: 25px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    line-height: 15px;
+    font-family: "Monserat";
+  }
+  .main .conditions__container .conditions .all__conditions .right__conditions {
+    display: flex;
+    flex-direction: column;
+  }
+  .main .conditions__container .conditions .all__conditions .right__conditions .condition {
+    width: 280px;
+    margin: 10px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+  }
+  .main .conditions__container .conditions .all__conditions .right__conditions .condition:hover {
+    background-color: rgba(255, 98, 0, 0.4196078431);
+    transition: 0.8s;
+  }
+  .main .conditions__container .conditions .all__conditions .right__conditions .condition .consition__text {
+    text-align: center;
+    padding: 25px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    line-height: 15px;
+    font-family: "Monserat";
+  }
+  .main .gallery {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding-bottom: 50px;
+  }
+  .main .gallery .title {
+    margin-top: 30px;
+    margin-left: 35px;
+    font-size: 16px;
+    margin: 15px;
+  }
+  .main .gallery .gallery__container {
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .main .gallery .gallery__container .left__Arrow {
+    padding: 15px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  .main .gallery .gallery__container .gallery__photo {
+    width: 350px;
+    height: 200px;
+    border-radius: 7px;
+    border: 0.05rem solid black;
+  }
+  .main .gallery .gallery__container .right__Arrow {
+    padding: 15px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: black;
+    padding-bottom: 100px;
+  }
+  .footer .title {
+    margin-top: 30px;
+    margin-left: 35px;
+    font-family: "Monserat";
+    color: white;
+    font-size: 16px;
+    margin: 15px;
+  }
+  .footer .footer__container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+  .footer .footer__container .contact__text {
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 20px;
+    font-family: "Monserat";
+    color: white;
+    margin-top: 50px;
+    font-size: 12px;
+    text-align: center;
+    letter-spacing: 0.5px;
+    line-height: 15px;
+  }
+  .footer .footer__container .contact__data {
+    display: flex;
+    flex-direction: column;
+    justify-content: none;
+    margin-top: 35px;
+  }
+  .footer .footer__container .contact__data .data__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer .footer__container .contact__data .data__info .email {
+    margin-top: 15px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 20px;
+    font-family: "Monserat";
+    color: white;
+    font-size: 12px;
+    letter-spacing: 2px;
+    line-height: 15px;
+  }
+  .footer .footer__container .contact__data .data__info .email__name {
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 20px;
+    font-family: "Monserat";
+    color: #FF6000;
+    font-size: 12px;
+    letter-spacing: 2px;
+    line-height: 15px;
+  }
+  .footer .footer__container .contact__data .data__info .phone {
+    margin-top: 30px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 20px;
+    font-family: "Monserat";
+    color: white;
+    font-size: 12px;
+    letter-spacing: 2px;
+    line-height: 15px;
+  }
+  .footer .footer__container .contact__data .data__info .phone__number {
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 20px;
+    font-family: "Monserat";
+    color: #FF6000;
+    font-size: 12px;
+    letter-spacing: 2px;
+    line-height: 15px;
+  }
+  .footer .footer__container .contact__data .data__info .address {
+    margin-top: 30px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 20px;
+    font-family: "Monserat";
+    color: white;
+    font-size: 12px;
+    letter-spacing: 2px;
+    line-height: 15px;
+  }
+  .footer .footer__container .contact__data .data__info .address_text {
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 20px;
+    font-family: "Monserat";
+    color: #FF6000;
+    font-size: 12px;
+    letter-spacing: 2px;
+    line-height: 15px;
+  }
+  .footer .footer__container .contact__data .data_inputs {
+    display: flex;
+    flex-direction: column;
+    margin-left: 85px;
+  }
+  .footer .footer__container .contact__data .data_inputs .name {
+    padding: 2px;
+    margin-top: 30px;
+    width: 250px;
+  }
+  .footer .footer__container .contact__data .data_inputs .phone {
+    padding: 2px;
+    margin-top: 30px;
+    width: 250px;
+  }
+  .footer .footer__container .contact__data .data_inputs .comments {
+    width: 250px;
+    height: 75px;
+    margin-top: 30px;
+  }
+  .footer .footer__container .contact__data .data_inputs .check__person {
+    display: flex;
+    justify-content: start;
+  }
+  .footer .footer__container .contact__data .data_inputs .check__person .agree_text {
+    margin-top: 17px;
+    margin-left: 10px;
+    font-family: "Monserat";
+    color: white;
+    font-size: 8px;
+    letter-spacing: 1px;
+    line-height: 10px;
+  }
+  .footer .footer__container .contact__data .data_inputs .check__person .check__info {
+    width: 15px;
+  }
+  .footer .footer__container .contact__data .data_inputs .submit__form {
+    margin-top: 30px;
+    padding: 5px;
+    width: 250px;
+    background-color: #FF6000;
+    color: white;
+    font-family: "Monserat";
+    font-weight: bold;
+    border-radius: 8px;
+  }
+}
+@media (max-width: 395px) {
+  body {
+    background-color: #EDEDED;
+  }
+  .main__header {
+    display: flex;
+    justify-content: space-between;
+  }
+  .main__header .logo {
+    display: flex;
+    margin: 5px;
+  }
+  .main__header .logo img {
+    width: 120px;
+    height: 18px;
+  }
+  .main__header .menu {
+    display: none;
+  }
+  .main__header .social {
+    display: flex;
+    flex-direction: column;
+  }
+  .main__header .social .media {
+    margin: 5px;
+  }
+  .main__header .social .media img {
+    width: 30px;
+    height: 30px;
+    margin-left: 7px;
+  }
+  .main__header .social .phone .phone__number {
+    color: white;
+  }
+  .main__header .social .phone .phone__number:hover {
+    color: #FF6000;
+  }
+  .main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 395px;
+  }
+  .main .back__image {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-image: url(../../src/homeBack.png);
+    filter: brightness(20%);
+    width: 395px;
+    height: 580px;
+    z-index: -1;
+  }
+  .main .offer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+  }
+  .main .offer .maintTitle {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 100px;
+    font-size: 20px;
+    font-family: "Monserat";
+  }
+  .main .offer .subTitle {
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+    margin-top: 35px;
+    font-size: 16px;
+    text-align: center;
+    font-family: "Monserat";
+  }
+  .main .offer .offerButton {
+    margin-top: 180px;
+    display: flex;
+    justify-content: center;
+    background-color: #FF6000;
+    border-radius: 5px;
+  }
+  .main .offer .offerButton:hover {
+    background-color: #783105;
+  }
+  .main .offer .offerButton .offerButton__txt {
+    padding: 10px;
+    font-family: "Monserat";
+    font-size: 12px;
+    margin: 15px;
+    text-decoration: none;
+    color: white;
+  }
+  .main .production {
+    display: flex;
+    width: 100%;
+    z-index: -2;
+    background-color: #EDEDED;
+  }
+  .main .production .production__container {
+    margin-top: 70px;
+    margin-bottom: 40px;
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+  }
+  .main .production .production__container .title {
+    display: flex;
+    justify-content: start;
+    margin: 5px;
+    font-size: 16px;
+    font-family: "Monserat";
+  }
+  .main .production .production__container .info {
+    margin-top: 50px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: none;
+    align-items: center;
+  }
+  .main .production .production__container .info .photo {
+    margin-top: 0px;
+    margin-left: 0px;
+    display: flex;
+  }
+  .main .production .production__container .info .photo img {
+    border-radius: 155px;
+    width: 280px;
+    height: 150px;
+  }
+  .main .production .production__container .info .discription {
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 20px;
+    font-family: "Monserat";
+    margin-top: 20px;
+    font-size: 12px;
+    line-height: 25px;
+    letter-spacing: 0;
+    text-align: left;
+    width: 80%;
+  }
+  .main .advantages {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding-bottom: 100px;
+  }
+  .main .advantages .title {
+    font-size: 16px;
+    margin: 15px;
+    font-family: "Monserat";
+  }
+  .main .advantages .advantages__container {
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  .main .advantages .advantages__container .column {
+    display: flex;
+    flex-direction: column;
+  }
+  .main .advantages .advantages__container .column .line {
+    display: flex;
+    justify-content: start;
+    width: 280px;
+    margin-top: 45px;
+  }
+  .main .advantages .advantages__container .column .line img {
+    width: 72px;
+    height: 70px;
+  }
+  .main .advantages .advantages__container .column .line p {
+    margin-left: 20px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    font-family: "Monserat";
+  }
+  .main .materials {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .main .materials .title {
+    margin-top: 30px;
+    margin-left: 35px;
+    font-family: "Monserat";
+    font-size: 16px;
+    margin: 15px;
+  }
+  .main .materials .m__discription {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .main .materials .m__discription .info {
+    margin-top: 35px;
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 20px;
+    font-family: "Monserat";
+    font-size: 12px;
+  }
+  .main .materials .materials__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .main .materials .materials__container .frame {
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+  }
+  .main .materials .materials__container .frame .discription {
+    display: flex;
+    flex-direction: column;
+  }
+  .main .materials .materials__container .frame .discription .d__title {
+    display: flex;
+    justify-content: center;
+  }
+  .main .materials .materials__container .frame .discription .d__title .title {
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 20px;
+    font-family: "Monserat";
+    font-size: 16px;
+  }
+  .main .materials .materials__container .frame .discription .d__info {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+  }
+  .main .materials .materials__container .frame .discription .d__info .info {
+    text-align: center;
+    margin-left: 15px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 20px;
+    font-family: "Monserat";
+    font-size: 11px;
+  }
+  .main .materials .materials__container .frame .f__photo {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .main .materials .materials__container .frame .f__photo .photo {
+    width: 280px;
+    height: 200px;
+    border-radius: 15px;
+  }
+  .main .materials .materials__container .finishing {
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+  }
+  .main .materials .materials__container .finishing .discription {
+    display: flex;
+    flex-direction: column;
+  }
+  .main .materials .materials__container .finishing .discription .d__title {
+    display: flex;
+    justify-content: center;
+  }
+  .main .materials .materials__container .finishing .discription .d__title .title {
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 20px;
+    font-family: "Monserat";
+    font-size: 16px;
+  }
+  .main .materials .materials__container .finishing .discription .d__info {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+  }
+  .main .materials .materials__container .finishing .discription .d__info .info {
+    text-align: center;
+    margin-left: 15px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 20px;
+    font-family: "Monserat";
+    font-size: 11px;
+  }
+  .main .materials .materials__container .finishing .f__photo {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .main .materials .materials__container .finishing .f__photo .photo {
+    width: 280px;
+    height: 200px;
+    border-radius: 15px;
+  }
+  .main .materials .materials__container .facade {
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+  }
+  .main .materials .materials__container .facade .discription {
+    display: flex;
+    flex-direction: column;
+  }
+  .main .materials .materials__container .facade .discription .d__title {
+    display: flex;
+    justify-content: center;
+  }
+  .main .materials .materials__container .facade .discription .d__title .title {
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 20px;
+    font-family: "Monserat";
+    font-size: 16px;
+  }
+  .main .materials .materials__container .facade .discription .d__info {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+  }
+  .main .materials .materials__container .facade .discription .d__info .info {
+    text-align: center;
+    margin-left: 15px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 20px;
+    font-family: "Monserat";
+    font-size: 11px;
+  }
+  .main .materials .materials__container .facade .f__photo {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .main .materials .materials__container .facade .f__photo .photo {
+    width: 280px;
+    height: 200px;
+    border-radius: 15px;
+  }
+  .main .types {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding-bottom: 50px;
+  }
+  .main .types .title {
+    margin-top: 30px;
+    margin-left: 35px;
+    font-family: "Monserat";
+    width: 100%;
+    font-size: 16px;
+    margin: 15px;
+  }
+  .main .types .t__discription {
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .main .types .t__discription .discription {
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 20px;
+    font-family: "Monserat";
+    font-size: 12px;
+    width: 90%;
+  }
+  .main .types .t__photos {
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .main .types .t__photos .photos__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .main .types .t__photos .photos__container .photo {
+    margin-top: 25px;
+    width: 280px;
+    height: 200px;
+    border-radius: 15px;
+  }
+  .main .conditions__container {
+    display: flex;
+    flex-direction: column;
+    background-color: #ededed;
+    width: 100%;
+    padding-bottom: 50px;
+  }
+  .main .conditions__container .title {
+    margin-top: 30px;
+    margin-left: 35px;
+    font-family: "Monserat";
+    font-size: 16px;
+    margin: 15px;
+    width: 100%;
+  }
+  .main .conditions__container .conditions {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .main .conditions__container .conditions .all__conditions {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    margin-top: 25px;
+  }
+  .main .conditions__container .conditions .all__conditions .left__conditions {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+  }
+  .main .conditions__container .conditions .all__conditions .left__conditions .condition {
+    width: 280px;
+    background-color: white;
+    margin: 10px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+  }
+  .main .conditions__container .conditions .all__conditions .left__conditions .condition:hover {
+    background-color: rgba(255, 98, 0, 0.4196078431);
+    transition: 0.8s;
+  }
+  .main .conditions__container .conditions .all__conditions .left__conditions .condition .consition__text {
+    text-align: center;
+    padding: 25px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    line-height: 15px;
+    font-family: "Monserat";
+  }
+  .main .conditions__container .conditions .all__conditions .right__conditions {
+    display: flex;
+    flex-direction: column;
+  }
+  .main .conditions__container .conditions .all__conditions .right__conditions .condition {
+    width: 280px;
+    margin: 10px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+  }
+  .main .conditions__container .conditions .all__conditions .right__conditions .condition:hover {
+    background-color: rgba(255, 98, 0, 0.4196078431);
+    transition: 0.8s;
+  }
+  .main .conditions__container .conditions .all__conditions .right__conditions .condition .consition__text {
+    text-align: center;
+    padding: 25px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    line-height: 15px;
+    font-family: "Monserat";
+  }
+  .main .gallery {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding-bottom: 50px;
+  }
+  .main .gallery .title {
+    margin-top: 30px;
+    margin-left: 35px;
+    font-size: 16px;
+    margin: 15px;
+  }
+  .main .gallery .gallery__container {
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .main .gallery .gallery__container .left__Arrow {
+    padding: 15px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  .main .gallery .gallery__container .gallery__photo {
+    width: 350px;
+    height: 150px;
+    border-radius: 7px;
+    border: 0.05rem solid black;
+  }
+  .main .gallery .gallery__container .right__Arrow {
+    padding: 15px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: black;
+    padding-bottom: 100px;
+  }
+  .footer .title {
+    margin-top: 30px;
+    margin-left: 35px;
+    font-family: "Monserat";
+    color: white;
+    font-size: 16px;
+    margin: 15px;
+  }
+  .footer .footer__container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+  .footer .footer__container .contact__text {
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 20px;
+    font-family: "Monserat";
+    color: white;
+    margin-top: 50px;
+    font-size: 12px;
+    text-align: center;
+    letter-spacing: 0.5px;
+    line-height: 15px;
+  }
+  .footer .footer__container .contact__data {
+    display: flex;
+    flex-direction: column;
+    justify-content: none;
+    margin-top: 35px;
+  }
+  .footer .footer__container .contact__data .data__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer .footer__container .contact__data .data__info .email {
+    margin-top: 15px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 20px;
+    font-family: "Monserat";
+    color: white;
+    font-size: 12px;
+    letter-spacing: 2px;
+    line-height: 15px;
+  }
+  .footer .footer__container .contact__data .data__info .email__name {
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 20px;
+    font-family: "Monserat";
+    color: #FF6000;
+    font-size: 12px;
+    letter-spacing: 2px;
+    line-height: 15px;
+  }
+  .footer .footer__container .contact__data .data__info .phone {
+    margin-top: 30px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 20px;
+    font-family: "Monserat";
+    color: white;
+    font-size: 12px;
+    letter-spacing: 2px;
+    line-height: 15px;
+  }
+  .footer .footer__container .contact__data .data__info .phone__number {
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 20px;
+    font-family: "Monserat";
+    color: #FF6000;
+    font-size: 12px;
+    letter-spacing: 2px;
+    line-height: 15px;
+  }
+  .footer .footer__container .contact__data .data__info .address {
+    margin-top: 30px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 20px;
+    font-family: "Monserat";
+    color: white;
+    font-size: 12px;
+    letter-spacing: 2px;
+    line-height: 15px;
+  }
+  .footer .footer__container .contact__data .data__info .address_text {
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 20px;
+    font-family: "Monserat";
+    color: #FF6000;
+    font-size: 12px;
+    letter-spacing: 2px;
+    line-height: 15px;
+  }
+  .footer .footer__container .contact__data .data_inputs {
+    display: flex;
+    flex-direction: column;
+    margin-left: 70px;
+  }
+  .footer .footer__container .contact__data .data_inputs .name {
+    padding: 2px;
+    margin-top: 30px;
+    width: 250px;
+  }
+  .footer .footer__container .contact__data .data_inputs .phone {
+    padding: 2px;
+    margin-top: 30px;
+    width: 250px;
+  }
+  .footer .footer__container .contact__data .data_inputs .comments {
+    width: 250px;
+    height: 75px;
+    margin-top: 30px;
+  }
+  .footer .footer__container .contact__data .data_inputs .check__person {
+    display: flex;
+    justify-content: start;
+  }
+  .footer .footer__container .contact__data .data_inputs .check__person .agree_text {
+    margin-top: 17px;
+    margin-left: 10px;
+    font-family: "Monserat";
+    color: white;
+    font-size: 8px;
+    letter-spacing: 1px;
+    line-height: 10px;
+  }
+  .footer .footer__container .contact__data .data_inputs .check__person .check__info {
+    width: 15px;
+  }
+  .footer .footer__container .contact__data .data_inputs .submit__form {
+    margin-top: 30px;
+    padding: 5px;
+    width: 250px;
+    background-color: #FF6000;
+    color: white;
+    font-family: "Monserat";
+    font-weight: bold;
+    border-radius: 8px;
+  }
+}
+@media (max-width: 365px) {
+  body {
+    background-color: #EDEDED;
+  }
+  .main__header {
+    display: flex;
+    justify-content: space-between;
+  }
+  .main__header .logo {
+    display: flex;
+    margin: 5px;
+  }
+  .main__header .logo img {
+    width: 120px;
+    height: 18px;
+  }
+  .main__header .menu {
+    display: none;
+  }
+  .main__header .social {
+    display: flex;
+    flex-direction: column;
+  }
+  .main__header .social .media {
+    margin: 5px;
+  }
+  .main__header .social .media img {
+    width: 30px;
+    height: 30px;
+    margin-left: 7px;
+  }
+  .main__header .social .phone .phone__number {
+    color: white;
+  }
+  .main__header .social .phone .phone__number:hover {
+    color: #FF6000;
+  }
+  .main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 365px;
+  }
+  .main .back__image {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-image: url(../../src/homeBack.png);
+    filter: brightness(20%);
+    width: 365px;
+    height: 580px;
+    z-index: -1;
+  }
+  .main .offer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+  }
+  .main .offer .maintTitle {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 100px;
+    font-size: 20px;
+    font-family: "Monserat";
+  }
+  .main .offer .subTitle {
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+    margin-top: 35px;
+    font-size: 16px;
+    text-align: center;
+    font-family: "Monserat";
+  }
+  .main .offer .offerButton {
+    margin-top: 180px;
+    display: flex;
+    justify-content: center;
+    background-color: #FF6000;
+    border-radius: 5px;
+  }
+  .main .offer .offerButton:hover {
+    background-color: #783105;
+  }
+  .main .offer .offerButton .offerButton__txt {
+    padding: 10px;
+    font-family: "Monserat";
+    font-size: 12px;
+    margin: 15px;
+    text-decoration: none;
+    color: white;
+  }
+  .main .production {
+    display: flex;
+    width: 100%;
+    z-index: -2;
+    background-color: #EDEDED;
+  }
+  .main .production .production__container {
+    margin-top: 70px;
+    margin-bottom: 40px;
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+  }
+  .main .production .production__container .title {
+    display: flex;
+    justify-content: start;
+    margin: 5px;
+    font-size: 16px;
+    font-family: "Monserat";
+  }
+  .main .production .production__container .info {
+    margin-top: 50px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: none;
+    align-items: center;
+  }
+  .main .production .production__container .info .photo {
+    margin-top: 0px;
+    margin-left: 0px;
+    display: flex;
+  }
+  .main .production .production__container .info .photo img {
+    border-radius: 155px;
+    width: 280px;
+    height: 150px;
+  }
+  .main .production .production__container .info .discription {
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 20px;
+    font-family: "Monserat";
+    margin-top: 20px;
+    font-size: 12px;
+    line-height: 25px;
+    letter-spacing: 0;
+    text-align: left;
+    width: 80%;
+  }
+  .main .advantages {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding-bottom: 100px;
+  }
+  .main .advantages .title {
+    font-size: 16px;
+    margin: 15px;
+    font-family: "Monserat";
+  }
+  .main .advantages .advantages__container {
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  .main .advantages .advantages__container .column {
+    display: flex;
+    flex-direction: column;
+  }
+  .main .advantages .advantages__container .column .line {
+    display: flex;
+    justify-content: start;
+    width: 280px;
+    margin-top: 45px;
+  }
+  .main .advantages .advantages__container .column .line img {
+    width: 72px;
+    height: 70px;
+  }
+  .main .advantages .advantages__container .column .line p {
+    margin-left: 20px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    font-family: "Monserat";
+  }
+  .main .materials {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .main .materials .title {
+    margin-top: 30px;
+    margin-left: 35px;
+    font-family: "Monserat";
+    font-size: 16px;
+    margin: 15px;
+  }
+  .main .materials .m__discription {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .main .materials .m__discription .info {
+    margin-top: 35px;
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 20px;
+    font-family: "Monserat";
+    font-size: 12px;
+  }
+  .main .materials .materials__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .main .materials .materials__container .frame {
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+  }
+  .main .materials .materials__container .frame .discription {
+    display: flex;
+    flex-direction: column;
+  }
+  .main .materials .materials__container .frame .discription .d__title {
+    display: flex;
+    justify-content: center;
+  }
+  .main .materials .materials__container .frame .discription .d__title .title {
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 20px;
+    font-family: "Monserat";
+    font-size: 16px;
+  }
+  .main .materials .materials__container .frame .discription .d__info {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+  }
+  .main .materials .materials__container .frame .discription .d__info .info {
+    text-align: center;
+    margin-left: 15px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 20px;
+    font-family: "Monserat";
+    font-size: 11px;
+  }
+  .main .materials .materials__container .frame .f__photo {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .main .materials .materials__container .frame .f__photo .photo {
+    width: 280px;
+    height: 200px;
+    border-radius: 15px;
+  }
+  .main .materials .materials__container .finishing {
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+  }
+  .main .materials .materials__container .finishing .discription {
+    display: flex;
+    flex-direction: column;
+  }
+  .main .materials .materials__container .finishing .discription .d__title {
+    display: flex;
+    justify-content: center;
+  }
+  .main .materials .materials__container .finishing .discription .d__title .title {
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 20px;
+    font-family: "Monserat";
+    font-size: 16px;
+  }
+  .main .materials .materials__container .finishing .discription .d__info {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+  }
+  .main .materials .materials__container .finishing .discription .d__info .info {
+    text-align: center;
+    margin-left: 15px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 20px;
+    font-family: "Monserat";
+    font-size: 11px;
+  }
+  .main .materials .materials__container .finishing .f__photo {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .main .materials .materials__container .finishing .f__photo .photo {
+    width: 280px;
+    height: 200px;
+    border-radius: 15px;
+  }
+  .main .materials .materials__container .facade {
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+  }
+  .main .materials .materials__container .facade .discription {
+    display: flex;
+    flex-direction: column;
+  }
+  .main .materials .materials__container .facade .discription .d__title {
+    display: flex;
+    justify-content: center;
+  }
+  .main .materials .materials__container .facade .discription .d__title .title {
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 20px;
+    font-family: "Monserat";
+    font-size: 16px;
+  }
+  .main .materials .materials__container .facade .discription .d__info {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+  }
+  .main .materials .materials__container .facade .discription .d__info .info {
+    text-align: center;
+    margin-left: 15px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 20px;
+    font-family: "Monserat";
+    font-size: 11px;
+  }
+  .main .materials .materials__container .facade .f__photo {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .main .materials .materials__container .facade .f__photo .photo {
+    width: 280px;
+    height: 200px;
+    border-radius: 15px;
+  }
+  .main .types {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding-bottom: 50px;
+  }
+  .main .types .title {
+    margin-top: 30px;
+    margin-left: 35px;
+    font-family: "Monserat";
+    width: 100%;
+    font-size: 16px;
+    margin: 15px;
+  }
+  .main .types .t__discription {
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .main .types .t__discription .discription {
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 20px;
+    font-family: "Monserat";
+    font-size: 12px;
+    width: 90%;
+  }
+  .main .types .t__photos {
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .main .types .t__photos .photos__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .main .types .t__photos .photos__container .photo {
+    margin-top: 25px;
+    width: 280px;
+    height: 200px;
+    border-radius: 15px;
+  }
+  .main .conditions__container {
+    display: flex;
+    flex-direction: column;
+    background-color: #ededed;
+    width: 100%;
+    padding-bottom: 50px;
+  }
+  .main .conditions__container .title {
+    margin-top: 30px;
+    margin-left: 35px;
+    font-family: "Monserat";
+    font-size: 16px;
+    margin: 15px;
+    width: 100%;
+  }
+  .main .conditions__container .conditions {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .main .conditions__container .conditions .all__conditions {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    margin-top: 25px;
+  }
+  .main .conditions__container .conditions .all__conditions .left__conditions {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+  }
+  .main .conditions__container .conditions .all__conditions .left__conditions .condition {
+    width: 280px;
+    background-color: white;
+    margin: 10px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+  }
+  .main .conditions__container .conditions .all__conditions .left__conditions .condition:hover {
+    background-color: rgba(255, 98, 0, 0.4196078431);
+    transition: 0.8s;
+  }
+  .main .conditions__container .conditions .all__conditions .left__conditions .condition .consition__text {
+    text-align: center;
+    padding: 25px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    line-height: 15px;
+    font-family: "Monserat";
+  }
+  .main .conditions__container .conditions .all__conditions .right__conditions {
+    display: flex;
+    flex-direction: column;
+  }
+  .main .conditions__container .conditions .all__conditions .right__conditions .condition {
+    width: 280px;
+    margin: 10px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+  }
+  .main .conditions__container .conditions .all__conditions .right__conditions .condition:hover {
+    background-color: rgba(255, 98, 0, 0.4196078431);
+    transition: 0.8s;
+  }
+  .main .conditions__container .conditions .all__conditions .right__conditions .condition .consition__text {
+    text-align: center;
+    padding: 25px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    line-height: 15px;
+    font-family: "Monserat";
+  }
+  .main .gallery {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding-bottom: 50px;
+  }
+  .main .gallery .title {
+    margin-top: 30px;
+    margin-left: 35px;
+    font-size: 16px;
+    margin: 15px;
+  }
+  .main .gallery .gallery__container {
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .main .gallery .gallery__container .left__Arrow {
+    padding: 15px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  .main .gallery .gallery__container .gallery__photo {
+    width: 350px;
+    height: 150px;
+    border-radius: 7px;
+    border: 0.05rem solid black;
+  }
+  .main .gallery .gallery__container .right__Arrow {
+    padding: 15px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: black;
+    padding-bottom: 100px;
+  }
+  .footer .title {
+    margin-top: 30px;
+    margin-left: 35px;
+    font-family: "Monserat";
+    color: white;
+    font-size: 16px;
+    margin: 15px;
+  }
+  .footer .footer__container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+  .footer .footer__container .contact__text {
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 20px;
+    font-family: "Monserat";
+    color: white;
+    margin-top: 50px;
+    font-size: 12px;
+    text-align: center;
+    letter-spacing: 0px;
+    line-height: 15px;
+  }
+  .footer .footer__container .contact__data {
+    display: flex;
+    flex-direction: column;
+    justify-content: none;
+    margin-top: 35px;
+  }
+  .footer .footer__container .contact__data .data__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer .footer__container .contact__data .data__info .email {
+    margin-top: 15px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 20px;
+    font-family: "Monserat";
+    color: white;
+    font-size: 12px;
+    letter-spacing: 2px;
+    line-height: 15px;
+  }
+  .footer .footer__container .contact__data .data__info .email__name {
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 20px;
+    font-family: "Monserat";
+    color: #FF6000;
+    font-size: 12px;
+    letter-spacing: 2px;
+    line-height: 15px;
+  }
+  .footer .footer__container .contact__data .data__info .phone {
+    margin-top: 30px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 20px;
+    font-family: "Monserat";
+    color: white;
+    font-size: 12px;
+    letter-spacing: 2px;
+    line-height: 15px;
+  }
+  .footer .footer__container .contact__data .data__info .phone__number {
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 20px;
+    font-family: "Monserat";
+    color: #FF6000;
+    font-size: 12px;
+    letter-spacing: 2px;
+    line-height: 15px;
+  }
+  .footer .footer__container .contact__data .data__info .address {
+    margin-top: 30px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 20px;
+    font-family: "Monserat";
+    color: white;
+    font-size: 12px;
+    letter-spacing: 2px;
+    line-height: 15px;
+  }
+  .footer .footer__container .contact__data .data__info .address_text {
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 20px;
+    font-family: "Monserat";
+    color: #FF6000;
+    font-size: 12px;
+    letter-spacing: 2px;
+    line-height: 15px;
+  }
+  .footer .footer__container .contact__data .data_inputs {
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+  }
+  .footer .footer__container .contact__data .data_inputs .name {
+    padding: 2px;
+    margin-top: 30px;
+    width: 250px;
+  }
+  .footer .footer__container .contact__data .data_inputs .phone {
+    padding: 2px;
+    margin-top: 30px;
+    width: 250px;
+  }
+  .footer .footer__container .contact__data .data_inputs .comments {
+    width: 250px;
+    height: 75px;
+    margin-top: 30px;
+  }
+  .footer .footer__container .contact__data .data_inputs .check__person {
+    display: flex;
+    justify-content: start;
+  }
+  .footer .footer__container .contact__data .data_inputs .check__person .agree_text {
+    margin-top: 17px;
+    margin-left: 10px;
+    font-family: "Monserat";
+    color: white;
+    font-size: 8px;
+    letter-spacing: 1px;
+    line-height: 10px;
+  }
+  .footer .footer__container .contact__data .data_inputs .check__person .check__info {
+    width: 15px;
+  }
+  .footer .footer__container .contact__data .data_inputs .submit__form {
+    margin-top: 30px;
+    padding: 5px;
+    width: 250px;
+    background-color: #FF6000;
+    color: white;
+    font-family: "Monserat";
+    font-weight: bold;
+    border-radius: 8px;
+  }
+}
+@media (max-width: 321px) {
+  body {
+    background-color: #EDEDED;
+  }
+  .main__header {
+    display: flex;
+    justify-content: space-between;
+  }
+  .main__header .logo {
+    display: flex;
+    margin: 5px;
+  }
+  .main__header .logo img {
+    width: 120px;
+    height: 18px;
+  }
+  .main__header .menu {
+    display: none;
+  }
+  .main__header .social {
+    display: flex;
+    flex-direction: column;
+  }
+  .main__header .social .media {
+    margin: 5px;
+  }
+  .main__header .social .media img {
+    width: 30px;
+    height: 30px;
+    margin-left: 7px;
+  }
+  .main__header .social .phone .phone__number {
+    color: white;
+  }
+  .main__header .social .phone .phone__number:hover {
+    color: #FF6000;
+  }
+  .main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 320px;
+  }
+  .main .back__image {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-image: url(../../src/homeBack.png);
+    filter: brightness(20%);
+    width: 320px;
+    height: 580px;
+    z-index: -1;
+  }
+  .main .offer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+  }
+  .main .offer .maintTitle {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 100px;
+    font-size: 20px;
+    font-family: "Monserat";
+  }
+  .main .offer .subTitle {
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+    margin-top: 35px;
+    font-size: 16px;
+    text-align: center;
+    font-family: "Monserat";
+  }
+  .main .offer .offerButton {
+    margin-top: 180px;
+    display: flex;
+    justify-content: center;
+    background-color: #FF6000;
+    border-radius: 5px;
+  }
+  .main .offer .offerButton:hover {
+    background-color: #783105;
+  }
+  .main .offer .offerButton .offerButton__txt {
+    padding: 10px;
+    font-family: "Monserat";
+    font-size: 12px;
+    margin: 15px;
+    text-decoration: none;
+    color: white;
+  }
+  .main .production {
+    display: flex;
+    width: 100%;
+    z-index: -2;
+    background-color: #EDEDED;
+  }
+  .main .production .production__container {
+    margin-top: 70px;
+    margin-bottom: 40px;
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+  }
+  .main .production .production__container .title {
+    display: flex;
+    justify-content: start;
+    margin: 5px;
+    font-size: 16px;
+    font-family: "Monserat";
+  }
+  .main .production .production__container .info {
+    margin-top: 50px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: none;
+    align-items: center;
+  }
+  .main .production .production__container .info .photo {
+    margin-top: 0px;
+    margin-left: 0px;
+    display: flex;
+  }
+  .main .production .production__container .info .photo img {
+    border-radius: 155px;
+    width: 280px;
+    height: 150px;
+  }
+  .main .production .production__container .info .discription {
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 20px;
+    font-family: "Monserat";
+    margin-top: 20px;
+    font-size: 12px;
+    line-height: 25px;
+    letter-spacing: 0;
+    text-align: left;
+    width: 80%;
+  }
+  .main .advantages {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding-bottom: 100px;
+  }
+  .main .advantages .title {
+    font-size: 16px;
+    margin: 15px;
+    font-family: "Monserat";
+  }
+  .main .advantages .advantages__container {
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  .main .advantages .advantages__container .column {
+    display: flex;
+    flex-direction: column;
+  }
+  .main .advantages .advantages__container .column .line {
+    display: flex;
+    justify-content: start;
+    width: 280px;
+    margin-top: 45px;
+  }
+  .main .advantages .advantages__container .column .line img {
+    width: 72px;
+    height: 70px;
+  }
+  .main .advantages .advantages__container .column .line p {
+    margin-left: 20px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    font-family: "Monserat";
+  }
+  .main .materials {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .main .materials .title {
+    margin-top: 30px;
+    margin-left: 35px;
+    font-family: "Monserat";
+    font-size: 16px;
+    margin: 15px;
+  }
+  .main .materials .m__discription {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .main .materials .m__discription .info {
+    margin-top: 35px;
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 20px;
+    font-family: "Monserat";
+    font-size: 12px;
+  }
+  .main .materials .materials__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .main .materials .materials__container .frame {
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+  }
+  .main .materials .materials__container .frame .discription {
+    display: flex;
+    flex-direction: column;
+  }
+  .main .materials .materials__container .frame .discription .d__title {
+    display: flex;
+    justify-content: center;
+  }
+  .main .materials .materials__container .frame .discription .d__title .title {
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 20px;
+    font-family: "Monserat";
+    font-size: 16px;
+  }
+  .main .materials .materials__container .frame .discription .d__info {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+  }
+  .main .materials .materials__container .frame .discription .d__info .info {
+    text-align: center;
+    margin-left: 15px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 20px;
+    font-family: "Monserat";
+    font-size: 11px;
+  }
+  .main .materials .materials__container .frame .f__photo {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .main .materials .materials__container .frame .f__photo .photo {
+    width: 280px;
+    height: 200px;
+    border-radius: 15px;
+  }
+  .main .materials .materials__container .finishing {
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+  }
+  .main .materials .materials__container .finishing .discription {
+    display: flex;
+    flex-direction: column;
+  }
+  .main .materials .materials__container .finishing .discription .d__title {
+    display: flex;
+    justify-content: center;
+  }
+  .main .materials .materials__container .finishing .discription .d__title .title {
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 20px;
+    font-family: "Monserat";
+    font-size: 16px;
+  }
+  .main .materials .materials__container .finishing .discription .d__info {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+  }
+  .main .materials .materials__container .finishing .discription .d__info .info {
+    text-align: center;
+    margin-left: 15px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 20px;
+    font-family: "Monserat";
+    font-size: 11px;
+  }
+  .main .materials .materials__container .finishing .f__photo {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .main .materials .materials__container .finishing .f__photo .photo {
+    width: 280px;
+    height: 200px;
+    border-radius: 15px;
+  }
+  .main .materials .materials__container .facade {
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+  }
+  .main .materials .materials__container .facade .discription {
+    display: flex;
+    flex-direction: column;
+  }
+  .main .materials .materials__container .facade .discription .d__title {
+    display: flex;
+    justify-content: center;
+  }
+  .main .materials .materials__container .facade .discription .d__title .title {
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 20px;
+    font-family: "Monserat";
+    font-size: 16px;
+  }
+  .main .materials .materials__container .facade .discription .d__info {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+  }
+  .main .materials .materials__container .facade .discription .d__info .info {
+    text-align: center;
+    margin-left: 15px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 20px;
+    font-family: "Monserat";
+    font-size: 11px;
+  }
+  .main .materials .materials__container .facade .f__photo {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .main .materials .materials__container .facade .f__photo .photo {
+    width: 280px;
+    height: 200px;
+    border-radius: 15px;
+  }
+  .main .types {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding-bottom: 50px;
+  }
+  .main .types .title {
+    margin-top: 30px;
+    margin-left: 35px;
+    font-family: "Monserat";
+    width: 100%;
+    font-size: 16px;
+    margin: 15px;
+  }
+  .main .types .t__discription {
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .main .types .t__discription .discription {
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 20px;
+    font-family: "Monserat";
+    font-size: 12px;
+    width: 90%;
+  }
+  .main .types .t__photos {
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .main .types .t__photos .photos__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .main .types .t__photos .photos__container .photo {
+    margin-top: 25px;
+    width: 280px;
+    height: 200px;
+    border-radius: 15px;
+  }
+  .main .conditions__container {
+    display: flex;
+    flex-direction: column;
+    background-color: #ededed;
+    width: 100%;
+    padding-bottom: 50px;
+  }
+  .main .conditions__container .title {
+    margin-top: 30px;
+    margin-left: 35px;
+    font-family: "Monserat";
+    font-size: 16px;
+    margin: 15px;
+    width: 100%;
+  }
+  .main .conditions__container .conditions {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .main .conditions__container .conditions .all__conditions {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    margin-top: 25px;
+  }
+  .main .conditions__container .conditions .all__conditions .left__conditions {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+  }
+  .main .conditions__container .conditions .all__conditions .left__conditions .condition {
+    width: 280px;
+    background-color: white;
+    margin: 10px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+  }
+  .main .conditions__container .conditions .all__conditions .left__conditions .condition:hover {
+    background-color: rgba(255, 98, 0, 0.4196078431);
+    transition: 0.8s;
+  }
+  .main .conditions__container .conditions .all__conditions .left__conditions .condition .consition__text {
+    text-align: center;
+    padding: 25px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    line-height: 15px;
+    font-family: "Monserat";
+  }
+  .main .conditions__container .conditions .all__conditions .right__conditions {
+    display: flex;
+    flex-direction: column;
+  }
+  .main .conditions__container .conditions .all__conditions .right__conditions .condition {
+    width: 280px;
+    margin: 10px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+  }
+  .main .conditions__container .conditions .all__conditions .right__conditions .condition:hover {
+    background-color: rgba(255, 98, 0, 0.4196078431);
+    transition: 0.8s;
+  }
+  .main .conditions__container .conditions .all__conditions .right__conditions .condition .consition__text {
+    text-align: center;
+    padding: 25px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    line-height: 15px;
+    font-family: "Monserat";
+  }
+  .main .gallery {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding-bottom: 50px;
+  }
+  .main .gallery .title {
+    margin-top: 30px;
+    margin-left: 35px;
+    font-size: 16px;
+    margin: 15px;
+  }
+  .main .gallery .gallery__container {
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .main .gallery .gallery__container .left__Arrow {
+    padding: 15px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  .main .gallery .gallery__container .gallery__photo {
+    width: 350px;
+    height: 150px;
+    border-radius: 7px;
+    border: 0.05rem solid black;
+  }
+  .main .gallery .gallery__container .right__Arrow {
+    padding: 15px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: black;
+    padding-bottom: 100px;
+  }
+  .footer .title {
+    margin-top: 30px;
+    margin-left: 35px;
+    font-family: "Monserat";
+    color: white;
+    font-size: 16px;
+    margin: 15px;
+  }
+  .footer .footer__container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+  .footer .footer__container .contact__text {
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 20px;
+    font-family: "Monserat";
+    color: white;
+    margin-top: 50px;
+    font-size: 12px;
+    text-align: center;
+    letter-spacing: 0.5px;
+    line-height: 15px;
+  }
+  .footer .footer__container .contact__data {
+    display: flex;
+    flex-direction: column;
+    justify-content: none;
+    margin-top: 35px;
+  }
+  .footer .footer__container .contact__data .data__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer .footer__container .contact__data .data__info .email {
+    margin-top: 15px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 20px;
+    font-family: "Monserat";
+    color: white;
+    font-size: 12px;
+    letter-spacing: 2px;
+    line-height: 15px;
+  }
+  .footer .footer__container .contact__data .data__info .email__name {
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 20px;
+    font-family: "Monserat";
+    color: #FF6000;
+    font-size: 12px;
+    letter-spacing: 2px;
+    line-height: 15px;
+  }
+  .footer .footer__container .contact__data .data__info .phone {
+    margin-top: 30px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 20px;
+    font-family: "Monserat";
+    color: white;
+    font-size: 12px;
+    letter-spacing: 2px;
+    line-height: 15px;
+  }
+  .footer .footer__container .contact__data .data__info .phone__number {
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 20px;
+    font-family: "Monserat";
+    color: #FF6000;
+    font-size: 12px;
+    letter-spacing: 2px;
+    line-height: 15px;
+  }
+  .footer .footer__container .contact__data .data__info .address {
+    margin-top: 30px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 20px;
+    font-family: "Monserat";
+    color: white;
+    font-size: 12px;
+    letter-spacing: 2px;
+    line-height: 15px;
+  }
+  .footer .footer__container .contact__data .data__info .address_text {
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 20px;
+    font-family: "Monserat";
+    color: #FF6000;
+    font-size: 12px;
+    letter-spacing: 2px;
+    line-height: 15px;
+  }
+  .footer .footer__container .contact__data .data_inputs {
+    display: flex;
+    flex-direction: column;
+    margin-left: 35px;
+  }
+  .footer .footer__container .contact__data .data_inputs .name {
+    padding: 2px;
+    margin-top: 30px;
+    width: 250px;
+  }
+  .footer .footer__container .contact__data .data_inputs .phone {
+    padding: 2px;
+    margin-top: 30px;
+    width: 250px;
+  }
+  .footer .footer__container .contact__data .data_inputs .comments {
+    width: 250px;
+    height: 75px;
+    margin-top: 30px;
+  }
+  .footer .footer__container .contact__data .data_inputs .check__person {
+    display: flex;
+    justify-content: start;
+  }
+  .footer .footer__container .contact__data .data_inputs .check__person .agree_text {
+    margin-top: 17px;
+    margin-left: 10px;
+    font-family: "Monserat";
+    color: white;
+    font-size: 8px;
+    letter-spacing: 1px;
+    line-height: 10px;
+  }
+  .footer .footer__container .contact__data .data_inputs .check__person .check__info {
+    width: 15px;
+  }
+  .footer .footer__container .contact__data .data_inputs .submit__form {
+    margin-top: 30px;
+    padding: 5px;
+    width: 250px;
+    background-color: #FF6000;
+    color: white;
+    font-family: "Monserat";
+    font-weight: bold;
+    border-radius: 8px;
+  }
+}/*# sourceMappingURL=adaptive.css.map */
