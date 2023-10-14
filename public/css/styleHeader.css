@@ -424,13 +424,14 @@ body {
 }
 .main .types .t__photos .photos__container {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 .main .types .t__photos .photos__container .photo {
   margin-top: 50px;
-  width: 900px;
-  height: 550px;
+  width: 750px;
+  height: 500px;
   border-radius: 15px;
 }
 .main .conditions__container {
