@@ -36,6 +36,7 @@ body {
   font-size: 18px;
   text-decoration: none;
   color: white;
+  cursor: pointer;
 }
 .main__header .menu .link:hover {
   transition: 0.8s;
