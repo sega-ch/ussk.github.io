@@ -3,7 +3,7 @@ const manufact = document.querySelector("#manufact");
 const dignity = document.querySelector("#dignity");
 const materials = document.querySelector("#materials");
 const type = document.querySelector("#type");
-const gallery = document.querySelector("#gallery");
+const photo = document.querySelector("#gallery");
 const contacts = document.querySelector("#contacts");
 
 main.addEventListener('click', function () { 
@@ -51,7 +51,7 @@ type.addEventListener('click', function () {
 
 });
 
-gallery.addEventListener('click', function () { 
+photo.addEventListener('click', function () { 
 
     window.scrollTo({
         top: document.querySelector(".gallery").getBoundingClientRect().top + window.scrollY,
